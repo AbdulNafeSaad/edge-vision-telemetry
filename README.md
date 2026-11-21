@@ -1,4 +1,4 @@
-# 👁️ Edge-Deployed Computer Vision & Telemetry Engine
+# Edge-Deployed Computer Vision & Telemetry Engine
 
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
 [![Ultralytics YOLOv9](https://img.shields.io/badge/YOLOv9-RealTime-brightgreen.svg)](https://docs.ultralytics.com/)
@@ -11,7 +11,7 @@ An optimized computer vision inference and hardware telemetry pipeline engineere
 
 ---
 
-## 📌 Key Features
+# Key Features
 
 - **Multi-Runtime Graph Optimization (`export.py`)**: Converts `.pt` checkpoints into static-shape ONNX and OpenVINO Intermediate Representation (`model.xml` + `model.bin`) artifacts and audits storage footprint deltas.
 - **Live Performance HUD & Visual Analytics**: Renders real-time OpenCV bounding boxes, class labels, and confidence scores alongside an on-screen telemetry HUD (`FPS`, `Latency ms`, `CPU %`, `RAM MB`, and active object count).
@@ -20,7 +20,7 @@ An optimized computer vision inference and hardware telemetry pipeline engineere
 
 ---
 
-## 🏗️ Execution Architecture
+# Execution Architecture
 
 ```text
 [ YOLOv9 .pt Weights ] ──► [ export.py ] ──► [ ONNX / OpenVINO IR Artifacts ]
@@ -35,7 +35,7 @@ An optimized computer vision inference and hardware telemetry pipeline engineere
 
 ---
 
-## 📊 Empirical Benchmark Results (200 Frames @ 640×480)
+# Empirical Benchmark Results (200 Frames @ 640×480)
 
 Evaluated on an **Intel Core i7-3610QM CPU @ 2.30GHz** (first 10 warmup frames excluded from steady-state calculations to isolate Frame 1 graph compilation overhead):
 
@@ -52,7 +52,7 @@ Evaluated on an **Intel Core i7-3610QM CPU @ 2.30GHz** (first 10 warmup frames e
 
 ---
 
-## 🛠️ Tech Stack
+# Tech Stack
 
 - **Computer Vision & Video I/O**: OpenCV (`opencv-python`)
 - **Model Engine**: Ultralytics YOLO (YOLOv9)
@@ -62,7 +62,7 @@ Evaluated on an **Intel Core i7-3610QM CPU @ 2.30GHz** (first 10 warmup frames e
 
 ---
 
-## 📂 Repository Structure
+# Repository Structure
 
 ```text
 ├── export.py                                                 # PyTorch-to-ONNX & OpenVINO IR export utility
@@ -75,7 +75,7 @@ Evaluated on an **Intel Core i7-3610QM CPU @ 2.30GHz** (first 10 warmup frames e
 
 ---
 
-## ⚙️ Quick Start
+# Quick Start
 
 ### 1. Install Dependencies
 ```bash
